@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ephemeral Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="/styles.css">
+  <script src="/script.js"></script>
+</head>
+<body translate="no">
+  <h1>
+  <div class="logo">∞</div>
+  <span class="adjective">ephemeral<sup class="asterisk">*</sup></span>
+  <span>tic-tac-toe</span>
+  <small>(2 players)</small>
+</h1>
+
+<table class="xo shiny-edges" style="--x: 901px; --y: 171px;">
+  <tbody><tr>
+    <td tabindex="0">&nbsp;</td>
+    <td tabindex="0"></td>
+    <td tabindex="0"></td>
+  </tr>
+  <tr>
+    <td tabindex="0">&nbsp;</td>
+    <td tabindex="0"></td>
+    <td tabindex="0"></td>
+  </tr>
+  <tr>
+    <td tabindex="0">&nbsp;</td>
+    <td tabindex="0"></td>
+    <td tabindex="0"></td>
+  </tr>
+</tbody></table>
+
+<img tabindex="0" class="ttt-winner" src="https://assets.codepen.io/8247/tic-tac-toe-a-winner.webp" alt="Nancy Pelosi Tic-tac-toe winner GIF">
+
+<footer>
+
+  <div class="game-status">
+    <div class="turn">
+      <span class="player-1"><b>⨯</b> <strong>PLAYER 1</strong>'s turn</span>
+      <span class="player-2"><i>⭘</i> <strong>PLAYER 2</strong>'s turn</span>
+    </div>
+    <div>
+      <span class="win player-2 rubberband"><strong>🎉 PLAYER 1 wins!</strong></span>
+      <span class="win player-1 rubberband"><strong>🎉 PLAYER 2 wins!</strong></span>
+    </div>
+  </div>
+
+  <button class="reset-btn">
+    <span class="reset">Reset</span>
+    <span class="new-game">New Game</span>
+  </button>
+
+  <hr>
+
+  <div class="description">
+    <sup class="asterisk">*</sup> <span><strong>Symbols disappear after 4 moves</strong></span>
+    <small style="margin-top: -.05em; line-height: 1.5; display: block;">As indicated by the depleating circles above each symbol:</small>
+    <div class="info-game">
+        <div class="remaining-life">
+          <span class="circle filled"></span><span class="circle filled"></span><span class="circle filled"></span>
+        </div>
+        <div>➜</div>‍
+        <div class="remaining-life">
+          <span class="circle filled"></span><span class="circle filled"></span><span class="circle outlined"></span>
+        </div>
+        <div>➜</div>‍
+        <div class="remaining-life">
+          <span class="circle filled"></span><span class="circle outlined"></span><span class="circle outlined"></span>
+        </div>
+        <div>➜</div>‍
+        <div class="remaining-life">
+          <span class="circle outlined"></span><span class="circle outlined"></span><span class="circle outlined"></span>
+        </div>
+        <div>➜</div>‍
+        <div class="remaining-life">
+          <small style="font-style:italic; color: #888;">GONE!</small>💨
+        </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <small style="font-style: italic; text-align: center;">
+    Built by
+    <a target="_blank" title="Opens in a new tab" class="built-by hover-slide" href="https://twitter.com/nonsalant">
+       Stefan Matei 
+    </a>
+  </small>
+</footer>
+
+<ul class="theme-picker" style="opacity: unset; pointer-events: unset;">
+  <li>
+    <button tabindex="1" class="picker-dark | primary" type="button" title="Switch to Dark">
+      <div class="picker-label">Dark</div>
+      <span class="icon" aria-hidden="true">☾</span>
+    </button>
+  </li>
+  <li>
+    <button class="picker-light | primary" type="button" title="Switch to Light">
+      <div class="picker-label">Light</div>
+      <span class="icon" aria-hidden="true">☀</span>
+    </button>
+  </li>
+  <li>
+    <button class="picker-auto | primary" type="button" title="Switch to Auto">
+      <div class="picker-label">Auto</div>
+      <span class="icon" aria-hidden="true">◐</span>
+    </button>
+  </li>
+</ul>
+
+<div class="pyro">
+  <div class="before"></div><div class="after"></div>
+</div>
+
+</body>
+</html>
